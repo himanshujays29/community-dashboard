@@ -27,10 +27,17 @@ const BOT_USERS = [
   "github-actions[bot]",
 ];
 
-function isBot(login?: string): boolean {
+function isBotUser(user: any): boolean {
+  // GitHub official field
+  if (user?.type && user.type !== "User") return true;
+
+  // fallback (extra safety)
+  const login = user?.login;
   if (!login) return true;
-  return login.endsWith("[bot]") || BOT_USERS.includes(login);
+
+  return login.endsWith("[bot]");
 }
+
 
 /* ---------------- Types ---------------- */
 
@@ -118,7 +125,7 @@ async function generate(period: "week" | "month" | "year", days: number) {
   );
 
   for (const pr of prs.items ?? []) {
-    if (isBot(pr.user?.login)) continue;
+    if (isBotUser(pr.user)) continue;
     const user = ensureUser(users, pr.user);
     addActivity(user, "PR opened", pr.created_at, POINTS.PR_OPENED);
   }
@@ -129,7 +136,7 @@ async function generate(period: "week" | "month" | "year", days: number) {
   );
 
   for (const pr of merged.items ?? []) {
-    if (isBot(pr.user?.login)) continue;
+    if (isBotUser(pr.user)) continue;
     const user = ensureUser(users, pr.user);
     addActivity(user, "PR merged", pr.closed_at, POINTS.PR_MERGED);
   }
@@ -140,7 +147,7 @@ async function generate(period: "week" | "month" | "year", days: number) {
   );
 
   for (const issue of issues.items ?? []) {
-    if (isBot(issue.user?.login)) continue;
+    if (isBotUser(issue.user)) continue;
     const user = ensureUser(users, issue.user);
     addActivity(user, "Issue opened", issue.created_at, POINTS.ISSUE_OPENED);
   }
