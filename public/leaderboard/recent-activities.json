@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1767032596257,
+  "updatedAt": 1767056722549,
   "groups": [
     {
       "date": "2025-12-29",
@@ -11,6 +11,22 @@
           "link": "https://github.com/CircuitVerse/community-dashboard/pull/44",
           "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
           "points": 2
+        },
+        {
+          "username": "ShinichiShi",
+          "name": null,
+          "title": "Add contributor details to People page",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/26",
+          "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
+          "points": 5
+        },
+        {
+          "username": "ShinichiShi",
+          "name": null,
+          "title": "Refactor leaderboard card ui",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/46",
+          "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
+          "points": 1
         },
         {
           "username": "senutpal",
@@ -239,19 +255,19 @@
       "date": "2025-12-27",
       "items": [
         {
-          "username": "naman79820",
-          "name": null,
-          "title": "YouTube embed breaks layout on Chapter 3 Simulator Interface (Introduction)",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/474",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
-          "points": 1
-        },
-        {
           "username": "Atharva7126",
           "name": null,
           "title": "Feat - Fix leaderboard sorting, search, and clear filter functionality",
           "link": "https://github.com/CircuitVerse/community-dashboard/issues/34",
           "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "YouTube embed breaks layout on Chapter 3 Simulator Interface (Introduction)",
+          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/474",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
           "points": 1
         },
         {
@@ -356,20 +372,20 @@
       "date": "2025-12-26",
       "items": [
         {
-          "username": "naman79820",
-          "name": null,
-          "title": "GitHub icon exists in navbar but is not visible",
-          "link": "https://github.com/CircuitVerse/community-dashboard/issues/25",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
-          "points": 1
-        },
-        {
           "username": "Atharva7126",
           "name": null,
           "title": "Fix - Overlapping of label \"High\"",
           "link": "https://github.com/CircuitVerse/community-dashboard/pull/16",
           "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
           "points": 2
+        },
+        {
+          "username": "Atharva7126",
+          "name": null,
+          "title": "Feat - added github repo link in navbar",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/12",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 5
         },
         {
           "username": "Atharva7126",
@@ -420,6 +436,14 @@
           "points": 1
         },
         {
+          "username": "naman79820",
+          "name": null,
+          "title": "GitHub icon exists in navbar but is not visible",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/25",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 1
+        },
+        {
           "username": "ShinichiShi",
           "name": null,
           "title": "Add contributor details to People page",
@@ -450,6 +474,14 @@
           "link": "https://github.com/CircuitVerse/community-dashboard/pull/23",
           "avatar_url": "https://avatars.githubusercontent.com/u/194053810?v=4",
           "points": 2
+        },
+        {
+          "username": "Git-HimanshuRathi",
+          "name": null,
+          "title": "fix - Fix footer background not spanning full viewport width",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/14",
+          "avatar_url": "https://avatars.githubusercontent.com/u/194053810?v=4",
+          "points": 5
         },
         {
           "username": "Git-HimanshuRathi",
@@ -585,44 +617,28 @@
       "date": "2025-12-25",
       "items": [
         {
-          "username": "naman79820",
+          "username": "Atharva7126",
           "name": null,
-          "title": "layout bug",
-          "link": "https://github.com/CircuitVerse/community-dashboard/pull/11",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "title": "Feat - added github repo link in navbar",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/12",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
           "points": 2
         },
         {
-          "username": "naman79820",
+          "username": "Atharva7126",
           "name": null,
-          "title": "Fix - Make iframes responsive below 650px using global CSS media query",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/462",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
-          "points": 5
+          "title": "Fix - fixed footer design and added reuseable component",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/9",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 2
         },
         {
-          "username": "naman79820",
+          "username": "Atharva7126",
           "name": null,
-          "title": "Fix excessive spacing causing incomplete full-width background in footer section",
-          "link": "https://github.com/CircuitVerse/community-dashboard/issues/13",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
-          "points": 1
-        },
-        {
-          "username": "naman79820",
-          "name": null,
-          "title": "Add hover effect to homepage pagination buttons",
-          "link": "https://github.com/CircuitVerse/community-dashboard/issues/8",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
-          "points": 1
-        },
-        {
-          "username": "naman79820",
-          "name": null,
-          "title": "🐛 People Page Fails to Load Without NEXT_PUBLIC_BASE_URL",
-          "link": "https://github.com/CircuitVerse/community-dashboard/issues/3",
-          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
-          "points": 1
+          "title": "Fix - unnecessary padding in navbar",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/5",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 2
         },
         {
           "username": "Atharva7126",
@@ -667,9 +683,105 @@
         {
           "username": "Atharva7126",
           "name": null,
+          "title": "Fix - fixed footer design and added reuseable component",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/9",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 5
+        },
+        {
+          "username": "Atharva7126",
+          "name": null,
+          "title": "Fix - unnecessary padding in navbar",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/5",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 5
+        },
+        {
+          "username": "Atharva7126",
+          "name": null,
           "title": "Feat - Adding github link in navbar",
           "link": "https://github.com/CircuitVerse/community-dashboard/issues/4",
           "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 1
+        },
+        {
+          "username": "Atharva7126",
+          "name": null,
+          "title": "Feat - Adding github link in navbar",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "layout bug",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/11",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 2
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "layout bug",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/11",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 2
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "Fix - Make iframes responsive below 650px using global CSS media query",
+          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/462",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 5
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "Fix excessive spacing causing incomplete full-width background in footer section",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/13",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "Add hover effect to homepage pagination buttons",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/8",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "🐛 People Page Fails to Load Without NEXT_PUBLIC_BASE_URL",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "Fix excessive spacing causing incomplete full-width background in footer section",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/13",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "Add hover effect to homepage pagination buttons",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/8",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+          "points": 1
+        },
+        {
+          "username": "naman79820",
+          "name": null,
+          "title": "🐛 People Page Fails to Load Without NEXT_PUBLIC_BASE_URL",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
           "points": 1
         },
         {
@@ -686,7 +798,31 @@
           "title": "fix - add try-catch in fetch url",
           "link": "https://github.com/CircuitVerse/community-dashboard/pull/6",
           "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
+          "points": 2
+        },
+        {
+          "username": "ShinichiShi",
+          "name": null,
+          "title": "fix - add try-catch in fetch url",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/6",
+          "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
           "points": 5
+        },
+        {
+          "username": "ShinichiShi",
+          "name": null,
+          "title": "fix - add try-catch in fetch url",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/6",
+          "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
+          "points": 5
+        },
+        {
+          "username": "ShinichiShi",
+          "name": null,
+          "title": "Feat - add people's page",
+          "link": "https://github.com/CircuitVerse/community-dashboard/issues/2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
+          "points": 1
         },
         {
           "username": "ShinichiShi",
@@ -710,6 +846,38 @@
           "title": "fix - Fix footer background not spanning full viewport width",
           "link": "https://github.com/CircuitVerse/community-dashboard/pull/14",
           "avatar_url": "https://avatars.githubusercontent.com/u/194053810?v=4",
+          "points": 2
+        },
+        {
+          "username": "Git-HimanshuRathi",
+          "name": null,
+          "title": "fix - Fix footer background not spanning full viewport width",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/14",
+          "avatar_url": "https://avatars.githubusercontent.com/u/194053810?v=4",
+          "points": 2
+        },
+        {
+          "username": "Me-Priyank",
+          "name": null,
+          "title": "hover effect added to page navigation buttons",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/10",
+          "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
+          "points": 2
+        },
+        {
+          "username": "Me-Priyank",
+          "name": null,
+          "title": "Pagination implemented",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
+          "points": 2
+        },
+        {
+          "username": "Me-Priyank",
+          "name": null,
+          "title": "#472 fixed (proper optimization implemented)",
+          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/473",
+          "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
           "points": 2
         },
         {
@@ -753,12 +921,52 @@
           "points": 5
         },
         {
-          "username": "SouparnaChatterjee",
+          "username": "Me-Priyank",
           "name": null,
-          "title": "Drag panel position handling & text-selection behavior in Vue simulator",
-          "link": "https://github.com/CircuitVerse/cv-frontend-vue/issues/699",
-          "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
-          "points": 1
+          "title": "hover effect added to page navigation buttons",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/10",
+          "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
+          "points": 5
+        },
+        {
+          "username": "Me-Priyank",
+          "name": null,
+          "title": "Pagination implemented",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
+          "points": 5
+        },
+        {
+          "username": "Radhikaa-chauhan",
+          "name": null,
+          "title": "Fix - leaderboard responsive layout",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/7",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
+          "points": 2
+        },
+        {
+          "username": "Radhikaa-chauhan",
+          "name": null,
+          "title": "Fix - leaderboard responsive layout",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/7",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
+          "points": 2
+        },
+        {
+          "username": "Radhikaa-chauhan",
+          "name": null,
+          "title": "Fix - leaderboard responsive layout",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/7",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
+          "points": 5
+        },
+        {
+          "username": "Radhikaa-chauhan",
+          "name": null,
+          "title": "Fix - leaderboard responsive layout",
+          "link": "https://github.com/CircuitVerse/community-dashboard/pull/7",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
+          "points": 5
         },
         {
           "username": "Teesta-Mukherjee",
@@ -785,20 +993,44 @@
           "points": 2
         },
         {
-          "username": "Radhikaa-chauhan",
+          "username": "Teesta-Mukherjee",
           "name": null,
-          "title": "Fix - leaderboard responsive layout",
-          "link": "https://github.com/CircuitVerse/community-dashboard/pull/7",
-          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
+          "title": "Fix alignment of Boolean Logic Table dialog",
+          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6507",
+          "avatar_url": "https://avatars.githubusercontent.com/u/168867474?v=4",
           "points": 2
         },
         {
-          "username": "Radhikaa-chauhan",
+          "username": "Teesta-Mukherjee",
           "name": null,
-          "title": "Fix - leaderboard responsive layout",
-          "link": "https://github.com/CircuitVerse/community-dashboard/pull/7",
-          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
-          "points": 5
+          "title": "Fix properties panel disappearing after closing Edit Layout",
+          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6506",
+          "avatar_url": "https://avatars.githubusercontent.com/u/168867474?v=4",
+          "points": 2
+        },
+        {
+          "username": "Teesta-Mukherjee",
+          "name": null,
+          "title": "Fix properties panel disappearing after closing Edit Layout",
+          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6505",
+          "avatar_url": "https://avatars.githubusercontent.com/u/168867474?v=4",
+          "points": 2
+        },
+        {
+          "username": "SouparnaChatterjee",
+          "name": null,
+          "title": "Drag panel position handling & text-selection behavior in Vue simulator",
+          "link": "https://github.com/CircuitVerse/cv-frontend-vue/issues/699",
+          "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
+          "points": 1
+        },
+        {
+          "username": "SouparnaChatterjee",
+          "name": null,
+          "title": "Drag panel position handling & text-selection behavior in Vue simulator",
+          "link": "https://github.com/CircuitVerse/cv-frontend-vue/issues/699",
+          "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
+          "points": 1
         },
         {
           "username": "manmeetsantre",
@@ -838,28 +1070,12 @@
           "points": 1
         },
         {
-          "username": "Me-Priyank",
+          "username": "SouparnaChatterjee",
           "name": null,
-          "title": "Docs Website Performance Issue - Large Unused JavaScript & CSS and Low Code Coverage (27%)",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/472",
-          "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
+          "title": "perf - improve draggable panel performance in simulator",
+          "link": "https://github.com/CircuitVerse/CircuitVerse/issues/6504",
+          "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
           "points": 1
-        },
-        {
-          "username": "ghanshyam2005singh",
-          "name": null,
-          "title": "feat - add hover functionality to Getting Started dropdown",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6502",
-          "avatar_url": "https://avatars.githubusercontent.com/u/56252619?v=4",
-          "points": 2
-        },
-        {
-          "username": "ghanshyam2005singh",
-          "name": null,
-          "title": "Fix - Update form control focus border and add green box-shadow",
-          "link": "https://github.com/CircuitVerse/Blog/pull/258",
-          "avatar_url": "https://avatars.githubusercontent.com/u/56252619?v=4",
-          "points": 2
         },
         {
           "username": "ghanshyam2005singh",
@@ -883,30 +1099,6 @@
           "title": "Enhancement - Add hover-to-open functionality for \"Getting Started\" navbar dropdown",
           "link": "https://github.com/CircuitVerse/CircuitVerse/issues/6501",
           "avatar_url": "https://avatars.githubusercontent.com/u/56252619?v=4",
-          "points": 1
-        },
-        {
-          "username": "ghanshyam2005singh",
-          "name": null,
-          "title": "Enhancement - Add hover-to-open functionality for \"Getting Started\" navbar dropdown",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/issues/6501",
-          "avatar_url": "https://avatars.githubusercontent.com/u/56252619?v=4",
-          "points": 1
-        },
-        {
-          "username": "SouparnaChatterjee",
-          "name": null,
-          "title": "perf - improve draggable panel performance in simulator",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/issues/6504",
-          "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
-          "points": 1
-        },
-        {
-          "username": "SouparnaChatterjee",
-          "name": null,
-          "title": "perf - improve draggable panel performance in simulator",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/issues/6504",
-          "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
           "points": 1
         },
         {
@@ -916,14 +1108,6 @@
           "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/461",
           "avatar_url": "https://avatars.githubusercontent.com/u/156829501?v=4",
           "points": 5
-        },
-        {
-          "username": "nishant530",
-          "name": null,
-          "title": "Improve search bar UX - center alignment and inline search behavior",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/471",
-          "avatar_url": "https://avatars.githubusercontent.com/u/206030473?v=4",
-          "points": 1
         },
         {
           "username": "nishant530",
@@ -1254,83 +1438,6 @@
           "title": "Add documentation for simulator circuit data flow",
           "link": "https://github.com/CircuitVerse/cv-frontend-vue/pull/695",
           "avatar_url": "https://avatars.githubusercontent.com/u/235941943?v=4",
-          "points": 2
-        }
-      ]
-    },
-    {
-      "date": "2025-12-16",
-      "items": [
-        {
-          "username": "Atharva7126",
-          "name": null,
-          "title": "Fix - Added YouTube embed - Saving Projects Within The CircuitVerse Simulator",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/455",
-          "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
-          "points": 5
-        },
-        {
-          "username": "senutpal",
-          "name": null,
-          "title": "docs - fix typos and grammar errors in chapters 2-7",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/465",
-          "avatar_url": "https://avatars.githubusercontent.com/u/168703537?v=4",
-          "points": 2
-        },
-        {
-          "username": "senutpal",
-          "name": null,
-          "title": "docs - fix typos and grammar errors across documentation",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6472",
-          "avatar_url": "https://avatars.githubusercontent.com/u/168703537?v=4",
-          "points": 5
-        },
-        {
-          "username": "senutpal",
-          "name": null,
-          "title": "fix - typos and grammar errors across documentation",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/464",
-          "avatar_url": "https://avatars.githubusercontent.com/u/168703537?v=4",
-          "points": 1
-        },
-        {
-          "username": "himanshujays29",
-          "name": null,
-          "title": "Fix typos, spelling errors, and grammar across simulator, docs, and locales",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6475",
-          "avatar_url": "https://avatars.githubusercontent.com/u/158487820?v=4",
-          "points": 2
-        },
-        {
-          "username": "himanshujays29",
-          "name": null,
-          "title": "🐞 Bug - Fix typos and localization errors in simulator, docs, and config files",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/issues/6474",
-          "avatar_url": "https://avatars.githubusercontent.com/u/158487820?v=4",
-          "points": 1
-        },
-        {
-          "username": "Radhikaa-chauhan",
-          "name": null,
-          "title": "docs(wsl) - fix Redis and PostgreSQL commands for WSL setup",
-          "link": "https://github.com/CircuitVerse/CircuitVerse/pull/6476",
-          "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
-          "points": 2
-        },
-        {
-          "username": "manmeetsantre",
-          "name": null,
-          "title": "Fix logo redirect to main CircuitVerse homepage on Learn web page",
-          "link": "https://github.com/CircuitVerse/Interactive-Book/pull/742",
-          "avatar_url": "https://avatars.githubusercontent.com/u/190877081?v=4",
-          "points": 2
-        },
-        {
-          "username": "poojaaa07",
-          "name": null,
-          "title": "fix - improve capitalization and grammar in sidebar labels",
-          "link": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/463",
-          "avatar_url": "https://avatars.githubusercontent.com/u/199589862?v=4",
           "points": 2
         }
       ]
