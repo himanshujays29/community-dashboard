@@ -1,10 +1,18 @@
-// generateLeaderboard.ts
+// scripts/generateLeaderboard.ts
 
-type Activity = {
+/* -------------------------------------------------------
+   TYPES
+------------------------------------------------------- */
+
+/**
+ * Shape expected by the leaderboard generator.
+ * This is INTENTIONALLY decoupled from DB activity shape.
+ */
+export type LeaderboardActivity = {
   username: string;
-  name?: string | null;
+  name: string | null;
   avatar_url: string;
-  role?: string;
+  role: string;
   type: string;
   points: number;
   occured_at: string;
@@ -21,28 +29,6 @@ type DailyActivity = {
   points: number;
 };
 
-export type UserEntry = {
-  username: string;
-  name: string | null;
-  avatar_url: string;
-  role: string | null;
-  total_points: number;
-  activity_breakdown: Record<string, { count: number; points: number }>;
-  daily_activity: {
-    date: string;
-    count: number;
-    points: number;
-  }[];
-  activities?: {
-    type: string;
-    title?: string | null;
-    occured_at: string;
-    link?: string | null;
-    points: number;
-  }[];
-};
-
-
 export type Contributor = {
   username: string;
   name: string | null;
@@ -53,9 +39,55 @@ export type Contributor = {
   daily_activity: DailyActivity[];
 };
 
+/**
+ * Public shape used by JSON / frontend consumers
+ */
+export type UserEntry = Contributor & {
+  activities?: {
+    type: string;
+    title?: string | null;
+    occured_at: string;
+    link?: string | null;
+    points: number;
+  }[];
+};
+
 /* -------------------------------------------------------
-   NORMALIZE ACTIVITY TYPE
+   DB → LEADERBOARD MAPPER (CRITICAL FIX)
 ------------------------------------------------------- */
+
+/**
+ * Converts a database activity into a leaderboard-safe activity.
+ * This prevents runtime crashes due to schema mismatches.
+ */
+export function mapDbActivityToLeaderboardActivity(
+  dbActivity: {
+    contributor: string;
+    contributor_name: string | null;
+    contributor_avatar_url: string | null;
+    contributor_role: string | null;
+    activity_definition: string;
+    occured_at: string;
+    points: number | null;
+    title?: string | null;
+    link?: string | null;
+  }
+): LeaderboardActivity {
+  return {
+    username: dbActivity.contributor,
+    name: dbActivity.contributor_name,
+    avatar_url: dbActivity.contributor_avatar_url ?? "",
+    role: dbActivity.contributor_role ?? "Contributor",
+    type: dbActivity.activity_definition,
+    occured_at: dbActivity.occured_at,
+    points: dbActivity.points ?? 0,
+  };
+}
+
+/* -------------------------------------------------------
+   NORMALIZE ACTIVITY LABEL
+------------------------------------------------------- */
+
 function normalizeActivityLabel(type: string): string | null {
   const t = type.toLowerCase();
 
@@ -71,6 +103,7 @@ function normalizeActivityLabel(type: string): string | null {
 /* -------------------------------------------------------
    SAFE BREAKDOWN MUTATION
 ------------------------------------------------------- */
+
 function addToBreakdown(
   breakdown: ActivityBreakdown,
   label: string,
@@ -82,28 +115,27 @@ function addToBreakdown(
 }
 
 /* -------------------------------------------------------
-   MAIN GENERATOR
+   MAIN LEADERBOARD GENERATOR
 ------------------------------------------------------- */
+
 export function generateLeaderboard(
-  activities: Activity[]
+  activities: LeaderboardActivity[]
 ): Contributor[] {
   const contributors: Record<string, Contributor> = {};
 
   for (const activity of activities) {
     if (!activity.username) continue;
 
-    // Guaranteed contributor initialization
     const contributor =
-      contributors[activity.username] ??=
-        {
-          username: activity.username,
-          name: activity.name ?? null,
-          avatar_url: activity.avatar_url,
-          role: activity.role ?? "Contributor",
-          total_points: 0,
-          activity_breakdown: {},
-          daily_activity: [],
-        };
+      contributors[activity.username] ??= {
+        username: activity.username,
+        name: activity.name ?? null,
+        avatar_url: activity.avatar_url,
+        role: activity.role,
+        total_points: 0,
+        activity_breakdown: {},
+        daily_activity: [],
+      };
 
     const label = normalizeActivityLabel(activity.type);
     if (!label) continue;
@@ -116,21 +148,15 @@ export function generateLeaderboard(
 
     contributor.total_points += activity.points;
 
-    // ---- DAILY ACTIVITY (STRICT SAFE) ----
+    // ---- DAILY ACTIVITY (SAFE) ----
     const date = new Date(activity.occured_at)
       .toISOString()
       .slice(0, 10);
 
-    let day = contributor.daily_activity.find(
-      d => d.date === date
-    );
+    let day = contributor.daily_activity.find(d => d.date === date);
 
     if (!day) {
-      day = {
-        date,
-        count: 0,
-        points: 0,
-      };
+      day = { date, count: 0, points: 0 };
       contributor.daily_activity.push(day);
     }
 
