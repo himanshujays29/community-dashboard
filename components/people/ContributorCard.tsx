@@ -38,7 +38,7 @@ const sortActivities = (
 const getPRIcon = (activity: string) => {
   const type = activity.toLowerCase();
   if (type.includes("merged")) {
-    return <GitMerge className="w-3 h-3 text-green-600" />;
+    return <GitMerge className="w-3 h-3 text-purple-500" />;
   }
   if (type.includes("opened")) {
     return <GitPullRequest className="w-3 h-3 text-blue-600" />;
