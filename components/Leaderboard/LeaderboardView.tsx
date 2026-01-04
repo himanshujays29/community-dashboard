@@ -112,6 +112,21 @@ const getActivityStyle = (activityName: string) => {
   };
 };
 
+function useDebounce<T>(value: T, delay = 400): T {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => clearTimeout(handler);
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+
 export default function LeaderboardView({
   entries,
   period,
@@ -124,6 +139,8 @@ export default function LeaderboardView({
   const searchParams = useSearchParams();
 
   const [searchQuery, setSearchQuery] = useState("");
+  const debouncedSearchQuery = useDebounce(searchQuery, 300);
+
 
   // Page size state - default to showing all entries (preserve existing behavior)
   const [pageSize, setPageSize] = useState<number>(() => {
@@ -223,14 +240,15 @@ export default function LeaderboardView({
       );
     }
 
-    if (searchQuery.trim()) {
-      const query = searchQuery.toLowerCase();
-      filtered = filtered.filter((entry) => {
-        const name = (entry.name || entry.username).toLowerCase();
-        const username = entry.username.toLowerCase();
-        return name.includes(query) || username.includes(query);
-      });
-    }
+    if (debouncedSearchQuery.trim()) {
+  const query = debouncedSearchQuery.toLowerCase();
+  filtered = filtered.filter((entry) => {
+    const name = (entry.name || entry.username).toLowerCase();
+    const username = entry.username.toLowerCase();
+    return name.includes(query) || username.includes(query);
+  });
+}
+
 
     // applying sorting
     try{
@@ -241,7 +259,7 @@ export default function LeaderboardView({
     }
 
     return filtered;
-  }, [entries, selectedRoles, searchQuery, sortBy]);
+  }, [entries, selectedRoles, debouncedSearchQuery, sortBy]);
 
   // Calculate total pages
   const totalPages = useMemo(() => {
@@ -262,17 +280,26 @@ export default function LeaderboardView({
   }, [filteredEntries, pageSize, currentPage]);
 
   // Reset to page 1 when pageSize changes or when filteredEntries change significantly
-  useEffect(() => {
-    if (currentPage > totalPages && totalPages > 0) {
-      // If current page is beyond total pages, reset to page 1
-      const params = new URLSearchParams(searchParams.toString());
-      params.delete("page");
-      if(typeof window !== 'undefined') {
-        window.history.replaceState(null, '', `${pathname}?${params.toString()}`);
-      }
-      setCurrentPage(1);
+useEffect(() => {
+  if (currentPage > totalPages && totalPages > 0) {
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete("page");
+    setCurrentPage(1);
+
+    if (typeof window !== "undefined") {
+      window.history.replaceState(null, "", `${pathname}?${params.toString()}`);
     }
-  }, [totalPages, currentPage, searchParams, pathname]);
+  }
+}, [
+  debouncedSearchQuery,
+  pageSize,
+  totalPages,
+  currentPage,
+  searchParams,
+  pathname,
+]);
+
+
 
   // Reset to page 1 when search query changes
   useEffect(() => {
@@ -285,7 +312,7 @@ export default function LeaderboardView({
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchQuery]); // Only reset when search query changes
+  }, [debouncedSearchQuery]); // Only reset when search query changes
 
   const toggleRole = (role: string) => {
     const newSelected = new Set(selectedRoles);
