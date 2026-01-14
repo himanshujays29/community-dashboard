@@ -611,13 +611,13 @@ export default function LeaderboardView({
                               ? "PR Opened"
                               : sortBy === "pr_merged"
                                 ? "PR Merged"
-                                : sortBy === "reviews"
-                                  ? "Review Submitted"
-                                  : sortBy === "issue_closed"
+                                : sortBy === "issue_closed"
                                     ? "Issue Closed"
                                     : sortBy === "issue_labeled"
                                       ? "Issue Labeled"
-                                      : "Issue Opened"}
+                                      : sortBy === "reviews"
+                                        ? "Review Submitted"
+                                        : "Issue Opened"}
                         </span>
                       </button>
                     </div>
