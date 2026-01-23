@@ -37,7 +37,7 @@ const Navbar = ({ config }: NavbarProps) => {
     <>
       {/* Desktop Navbar */}
       <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl rounded-full border border-zinc-200/60 dark:border-white/10 bg-white/40 dark:bg-zinc-950/40 backdrop-blur-md shadow-md">
-              <div className="px-4 h-14 flex items-center justify-between">
+        <div className="px-4 h-14 flex items-center justify-between">          
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
@@ -51,8 +51,8 @@ const Navbar = ({ config }: NavbarProps) => {
           </Link>
 
           {/* Nav Links */}
-          <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-1 rounded-full border bg-white/30 dark:bg-zinc-950/30 backdrop-blur-md shadow-sm">
-                      {navItems.map((item) => {
+          <nav className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-1 rounded-full border bg-white/30 dark:bg-zinc-950/30 backdrop-blur-md shadow-sm">
+            {navItems.map((item) => {
               const active = isActive(item.href);
 
               return (
@@ -107,11 +107,10 @@ const Navbar = ({ config }: NavbarProps) => {
 
       {/* Mobile Navbar */}
       <nav
-        className={`md:hidden fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-in-out ${
         scrollDirection === "down" ? "-bottom-40 opacity-0 pointer-events-none" : "bottom-4 opacity-100"
         }`}
-       >
-
+      >
         <div className="flex items-center gap-1 rounded-full border border-zinc-200 dark:border-white/10 bg-background/90 backdrop-blur-xl shadow-xl p-1">
           {navItems.map((item) => {
             const Icon = item.icon;
