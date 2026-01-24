@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1769130361351,
+  "updatedAt": 1769216587367,
   "period": "Last_30days",
   "repos": [
     {
@@ -12,15 +12,15 @@
       "forks": 304,
       "current": {
         "pr_opened": 20,
-        "pr_merged": 12,
-        "issue_created": 17,
-        "currentTotalContribution": 49
+        "pr_merged": 10,
+        "issue_created": 15,
+        "currentTotalContribution": 45
       },
       "previous": {
-        "pr_merged": 5
+        "pr_merged": 7
       },
       "growth": {
-        "pr_merged": 7
+        "pr_merged": 3
       }
     },
     {
@@ -29,13 +29,13 @@
       "language": "JavaScript",
       "avatar_url": "https://avatars.githubusercontent.com/u/42944450?v=4",
       "html_url": "https://github.com/CircuitVerse/CircuitVerse",
-      "stars": 1136,
+      "stars": 1137,
       "forks": 1890,
       "current": {
-        "pr_opened": 101,
+        "pr_opened": 103,
         "pr_merged": 7,
-        "issue_created": 43,
-        "currentTotalContribution": 151
+        "issue_created": 42,
+        "currentTotalContribution": 152
       },
       "previous": {
         "pr_merged": 8
@@ -93,12 +93,12 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/42944450?v=4",
       "html_url": "https://github.com/CircuitVerse/mobile-app",
       "stars": 89,
-      "forks": 128,
+      "forks": 129,
       "current": {
-        "pr_opened": 7,
+        "pr_opened": 8,
         "pr_merged": 3,
-        "issue_created": 5,
-        "currentTotalContribution": 15
+        "issue_created": 6,
+        "currentTotalContribution": 17
       },
       "previous": {
         "pr_merged": 0
@@ -116,10 +116,10 @@
       "stars": 9,
       "forks": 68,
       "current": {
-        "pr_opened": 3,
+        "pr_opened": 2,
         "pr_merged": 1,
         "issue_created": 2,
-        "currentTotalContribution": 6
+        "currentTotalContribution": 5
       },
       "previous": {
         "pr_merged": 3
@@ -177,7 +177,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/42944450?v=4",
       "html_url": "https://github.com/CircuitVerse/yosys2digitaljs-server",
       "stars": 1,
-      "forks": 1,
+      "forks": 4,
       "current": {
         "pr_opened": 0,
         "pr_merged": 0,
@@ -223,8 +223,8 @@
       "current": {
         "pr_opened": 0,
         "pr_merged": 0,
-        "issue_created": 2,
-        "currentTotalContribution": 2
+        "issue_created": 3,
+        "currentTotalContribution": 3
       },
       "previous": {
         "pr_merged": 0
@@ -326,10 +326,10 @@
       "stars": 48,
       "forks": 211,
       "current": {
-        "pr_opened": 86,
+        "pr_opened": 89,
         "pr_merged": 15,
-        "issue_created": 58,
-        "currentTotalContribution": 159
+        "issue_created": 61,
+        "currentTotalContribution": 165
       },
       "previous": {
         "pr_merged": 1
@@ -410,16 +410,16 @@
       "stars": 10,
       "forks": 37,
       "current": {
-        "pr_opened": 119,
-        "pr_merged": 93,
-        "issue_created": 113,
-        "currentTotalContribution": 325
+        "pr_opened": 122,
+        "pr_merged": 94,
+        "issue_created": 114,
+        "currentTotalContribution": 330
       },
       "previous": {
         "pr_merged": 0
       },
       "growth": {
-        "pr_merged": 93
+        "pr_merged": 94
       }
     }
   ]
